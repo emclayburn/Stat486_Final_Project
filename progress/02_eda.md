@@ -40,7 +40,19 @@ Salary Skewness: The median AAV ($1.7M) is significantly lower than the mean ($3
 Advanced Metrics: Expected Goals (I_F_xGoals) shows a strong correlation (0.63), but it is lower than raw points. This suggests the model may identify "anomalies" where players have high expected production but lower salaries/raw point totals.
 
 Visual Exploration:
+! [Total Points vs AAV](plot1.png)
+Description: This scatter plot shows the relationship between a player's total points and their Annual Average Value (AAV).
 
+Relevance: It confirms a strong positive correlation (r = 0.75), but more importantly, it highlights the "spread." Players in the bottom right (high points, low salary) represent high-value assets, while those in the top left (low points, high salary) may be overvalued. This visualization justifies using regression to find the "expected" salary line and identifying anomalies that fall far from it.
+
+! [Salary Distribution by Position](plot2.png)
+Description: This box plot compares the distribution of salaries between Forwards (F) and Defensemen (D).
+
+Relevance: It helps determine if "Position" needs to be a key categorical feature in our supervised model. We can see that while the medians are somewhat similar, Forwards have a higher "ceiling" with more elite-paid outliers. This suggests that the market values high-end scoring (typically forwards) differently than defensive contributions, which will be important for the model to distinguish.
 
 Challenges and Reflection:
 Challenge: One of the primary challenges was handling the "Situation" granularity in the MoneyPuck data. Because players are listed multiple times (5on5, Power Play, Penalty Kill, etc.), I had to specifically filter for the "all" situation to ensure each player had a single row representing their total season performance. Additionally, synchronizing player names between the MoneyPuck and Kaggle datasets required string cleaning (lowercasing and trimming) to ensure a high match rate for the merge.
+
+LINKS: https://www.kaggle.com/datasets/natenadeau/nhl-2024-25-statscontacts?resource=download
+
+https://moneypuck.com/data.htm
