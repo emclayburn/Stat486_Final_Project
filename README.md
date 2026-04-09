@@ -1,7 +1,5 @@
 # Stat486_Final_Project
 
-# Stat486_Final_Project
-
 This project uses machine learning to predict NHL player salaries (AAV) based on performance metrics from the 2024-25 season. It identifies market inefficiencies by flagging "Underpaid" and "Overpaid" players relative to their on-ice production.
 
 # Reproducibility Instructions
