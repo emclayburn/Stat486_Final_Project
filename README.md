@@ -45,3 +45,6 @@ We identified 4 distinct player archetypes using clustering. The analysis highli
 MoneyPuck (2024-25 Skater Data).
 
 Salary Data: Compiled 2025-26 contract data via Kaggle.
+
+### Links
+Streamlit app: https://stat486nhl.streamlit.app/
