@@ -48,3 +48,5 @@ Salary Data: Compiled 2025-26 contract data via Kaggle.
 
 ### Links
 Streamlit app: https://stat486nhl.streamlit.app/
+
+Final Presentation: https://docs.google.com/presentation/d/1_gTWFJY_f0EXL9-X0DErply9VFM_rm_XeETWKG2sJ9E/edit?usp=sharing
